@@ -41,6 +41,6 @@
       <Button layoutX="174.0" layoutY="204.0" mnemonicParsing="false" onAction="#Clickdot" prefHeight="25.0" prefWidth="45.0" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Clickplus" prefHeight="91.0" prefWidth="45.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Clickequals" prefHeight="80.0" prefWidth="45.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-      <Label prefHeight="30.0" prefWidth="260.0" GridPane.columnSpan="4" />
+      <Label prefHeight="30.0" text="${controller.rezultat}" prefWidth="260.0" GridPane.columnSpan="4" />
    </children>
 </GridPane>

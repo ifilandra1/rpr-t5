@@ -15,13 +15,16 @@ import javafx.scene.paint.Color;
 
 public class Controller {
 
-private SimpleStringProperty property;
+private SimpleStringProperty rezultat;
 
 
 public Controller() {
-    property=new SimpleStringProperty("");
+    rezultat=new SimpleStringProperty("");
 }
 
+public String getRezultat() {
+    return rezultat.get();
+}
 
 
     public void Clickplus(ActionEvent actionEvent) {
