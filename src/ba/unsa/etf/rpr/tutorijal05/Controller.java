@@ -1,4 +1,5 @@
 package ba.unsa.etf.rpr.tutorijal05;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 
 import javafx.event.ActionEvent;
@@ -13,6 +14,54 @@ import javafx.scene.paint.Color;
 
 
 public class Controller {
+
+private SimpleStringProperty property;
+
+
+public Controller() {
+    property=new SimpleStringProperty("");
+}
+
+
+
+    public void Clickplus(ActionEvent actionEvent) {
+
+    }
+
+
+    public void Click1(ActionEvent actionEvent) {
+
+    }
+
+    public void Click2(ActionEvent actionEvent) {
+    }
+
+    public void Click3(ActionEvent actionEvent) {
+    }
+
+    public void Click0(ActionEvent actionEvent) {
+    }
+
+    public void Clickdot(ActionEvent actionEvent) {
+    }
+
+    public void Clickequals(ActionEvent actionEvent) {
+    }
+
+    public void Click5(ActionEvent actionEvent) {
+    }
+
+    public void Click4(ActionEvent actionEvent) {
+    }
+
+    public void Click9(ActionEvent actionEvent) {
+    }
+
+    public void Click8(ActionEvent actionEvent) {
+    }
+
+    public void Click7(ActionEvent actionEvent) {
+    }
 
 
 }
