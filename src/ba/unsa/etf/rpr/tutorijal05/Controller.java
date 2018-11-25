@@ -16,7 +16,8 @@ import javafx.scene.paint.Color;
 public class Controller {
 
 private SimpleStringProperty rezultat;
-
+private boolean unesenprvi, unesendrugi;
+private double prvi, drugi;
 
 public Controller() {
     rezultat=new SimpleStringProperty("");
@@ -32,7 +33,7 @@ public SimpleStringProperty rezultatProperty() {
 
 
     public void Clickplus(ActionEvent actionEvent) {
-rezultat.set("kliknuto");
+
     }
 
 
@@ -71,4 +72,6 @@ rezultat.set("kliknuto");
     }
 
 
+    public void ClickMinus(ActionEvent actionEvent) {
+    }
 }

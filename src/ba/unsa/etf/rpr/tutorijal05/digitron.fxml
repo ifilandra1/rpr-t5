@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane prefHeight="266.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
+<GridPane prefHeight="266.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -27,7 +27,7 @@
       <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="\%" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="x" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#ClickMinus" prefHeight="25.0" prefWidth="45.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click7" prefHeight="25.0" prefWidth="45.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click8" prefHeight="25.0" prefWidth="45.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click9" prefHeight="25.0" prefWidth="45.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
@@ -41,6 +41,6 @@
       <Button layoutX="174.0" layoutY="204.0" mnemonicParsing="false" onAction="#Clickdot" prefHeight="25.0" prefWidth="45.0" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Clickplus" prefHeight="91.0" prefWidth="45.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Clickequals" prefHeight="80.0" prefWidth="45.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
-      <Label prefHeight="30.0" text="${controller.rezultat}" prefWidth="260.0" GridPane.columnSpan="4" />
+      <Label prefHeight="30.0" prefWidth="260.0" text="${controller.rezultat}" GridPane.columnSpan="4" />
    </children>
 </GridPane>
