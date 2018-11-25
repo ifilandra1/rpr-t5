@@ -33,7 +33,7 @@
       <Button mnemonicParsing="false" onAction="#Click9" prefHeight="25.0" prefWidth="45.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click4" prefHeight="25.0" prefWidth="45.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click5" prefHeight="25.0" prefWidth="45.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-      <Button maxHeight="25.0" maxWidth="45.0" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button maxHeight="25.0" maxWidth="45.0" mnemonicParsing="false" onAction="#Click6" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click1" prefHeight="25.0" prefWidth="45.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click2" prefHeight="25.0" prefWidth="45.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
       <Button layoutX="99.0" layoutY="204.0" mnemonicParsing="false" onAction="#Click3" prefHeight="25.0" prefWidth="45.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />

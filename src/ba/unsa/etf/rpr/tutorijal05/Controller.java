@@ -26,6 +26,8 @@ private int brojacdecimalaprvog=1;
 private int brojacdecimaladrugog=1;
 
 
+
+
     private enum operacija {sabiranje, oduzimanje, mnozenje, dijeljenje, postotak} ;
 operacija op;
 
@@ -135,18 +137,161 @@ public SimpleStringProperty rezultatProperty() {
     }
 
     public void Click5(ActionEvent actionEvent) {
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+                prvi += 5;
+            }
+            else {
+                prvi+=5/Math.pow(10,brojacdecimalaprvog);
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+                drugi+=5;
+            }
+            else {
+                drugi+=5/Math.pow(10,brojacdecimaladrugog);
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
     }
 
     public void Click4(ActionEvent actionEvent) {
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+                prvi += 4;
+            }
+            else {
+                prvi+=4/Math.pow(10,brojacdecimalaprvog);
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+                drugi+=4;
+            }
+            else {
+                drugi+=4/Math.pow(10,brojacdecimaladrugog);
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
     }
 
     public void Click9(ActionEvent actionEvent) {
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+                prvi += 9;
+            }
+            else {
+                prvi+=9/Math.pow(10,brojacdecimalaprvog);
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+                drugi+=9;
+            }
+            else {
+                drugi+=9/Math.pow(10,brojacdecimaladrugog);
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
     }
 
     public void Click8(ActionEvent actionEvent) {
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+                prvi += 8;
+            }
+            else {
+                prvi+=8/Math.pow(10,brojacdecimalaprvog);
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+                drugi+=8;
+            }
+            else {
+                drugi+=8/Math.pow(10,brojacdecimaladrugog);
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
     }
 
     public void Click7(ActionEvent actionEvent) {
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+                prvi += 7;
+            }
+            else {
+                prvi+=7/Math.pow(10,brojacdecimalaprvog);
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+                drugi+=7;
+            }
+            else {
+                drugi+=7/Math.pow(10,brojacdecimaladrugog);
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
+    }
+
+    public void Click6(ActionEvent actionEvent) {
+
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+                prvi += 6;
+            }
+            else {
+                prvi+=6/Math.pow(10,brojacdecimalaprvog);
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+                drugi+=6;
+            }
+            else {
+                drugi+=6/Math.pow(10,brojacdecimaladrugog);
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
+
     }
 
 
