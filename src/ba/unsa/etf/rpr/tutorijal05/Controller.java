@@ -126,15 +126,7 @@ public SimpleStringProperty rezultatProperty() {
         }
     }
 
-    public void Click0(ActionEvent actionEvent) {
-    }
 
-    public void Clickdot(ActionEvent actionEvent) {
-    tacka=true;
-    }
-
-    public void Clickequals(ActionEvent actionEvent) {
-    }
 
     public void Click5(ActionEvent actionEvent) {
         if(!prviunesen){
@@ -292,6 +284,21 @@ public SimpleStringProperty rezultatProperty() {
             rezultat.set(Double.toString(drugi));
         }
 
+    }
+
+    public void Click0(ActionEvent actionEvent) {
+    }
+
+    public void Clickdot(ActionEvent actionEvent) {
+        tacka = true;
+    }
+
+    public void Clickequals(ActionEvent actionEvent) {
+    if(operacijaunesena) {
+        if(op ==operacija.sabiranje)rezultat.set(  Double.toString(prvi+drugi)    );
+        prviunesen=false; tacka=false; operacijaunesena=false;
+        prvi=0; drugi=prvi; brojacdecimaladrugog=1; brojacdecimalaprvog=1;
+    }
     }
 
 
