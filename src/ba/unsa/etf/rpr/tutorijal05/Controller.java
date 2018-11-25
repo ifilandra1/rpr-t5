@@ -16,8 +16,10 @@ import javafx.scene.paint.Color;
 public class Controller {
 
 private SimpleStringProperty rezultat;
-private boolean unesenprvi, unesendrugi;
+private boolean unesenprvi, unesendrugi, unesenaoperacija;
 private double prvi, drugi;
+private enum operacija {sabiranje, oduzimanje, mnozenje, dijeljenje, postotak} ;
+operacija op;
 
 public Controller() {
     rezultat=new SimpleStringProperty("");
