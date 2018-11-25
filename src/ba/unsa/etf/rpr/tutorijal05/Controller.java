@@ -12,11 +12,17 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Controller {
 
 private SimpleStringProperty rezultat;
 private boolean unesenprvi=false, unesendrugi=false, unesenaoperacija=false;
+private boolean tacka=false;
+private List<Integer> decimaleprvog = new ArrayList<Integer>();
+private List<Integer> decimaledrugog = new ArrayList<Integer>();
 private double prvi, drugi;
 
 
