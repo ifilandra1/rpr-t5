@@ -16,9 +16,11 @@ import javafx.scene.paint.Color;
 public class Controller {
 
 private SimpleStringProperty rezultat;
-private boolean unesenprvi, unesendrugi, unesenaoperacija;
+private boolean unesenprvi=false, unesendrugi=false, unesenaoperacija=false;
 private double prvi, drugi;
-private enum operacija {sabiranje, oduzimanje, mnozenje, dijeljenje, postotak} ;
+
+
+    private enum operacija {sabiranje, oduzimanje, mnozenje, dijeljenje, postotak} ;
 operacija op;
 
 public Controller() {
@@ -32,11 +34,6 @@ public String getRezultat() {
 public SimpleStringProperty rezultatProperty() {
     return rezultat;
 }
-
-
-    public void Clickplus(ActionEvent actionEvent) {
-
-    }
 
 
     public void Click1(ActionEvent actionEvent) {
@@ -76,4 +73,18 @@ public SimpleStringProperty rezultatProperty() {
 
     public void ClickMinus(ActionEvent actionEvent) {
     }
+    public void ClickMnozenje(ActionEvent actionEvent) {
+    }
+
+    public void ClickDijeljenje(ActionEvent actionEvent) {
+    }
+
+    public void ClickPostotak(ActionEvent actionEvent) {
+    }
+
+    public void Clickplus(ActionEvent actionEvent) {
+
+    }
+
+
 }

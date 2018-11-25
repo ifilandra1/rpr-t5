@@ -24,9 +24,9 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="\%" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="x" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#ClickPostotak" prefHeight="25.0" prefWidth="45.0" text="\%" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#ClickDijeljenje" prefHeight="25.0" prefWidth="45.0" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#ClickMnozenje" prefHeight="25.0" prefWidth="45.0" text="x" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#ClickMinus" prefHeight="25.0" prefWidth="45.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click7" prefHeight="25.0" prefWidth="45.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#Click8" prefHeight="25.0" prefWidth="45.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
