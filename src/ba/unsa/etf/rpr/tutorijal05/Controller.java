@@ -287,6 +287,27 @@ public SimpleStringProperty rezultatProperty() {
     }
 
     public void Click0(ActionEvent actionEvent) {
+
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+            }
+            else {
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+            }
+            else {
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
+
     }
 
     public void Clickdot(ActionEvent actionEvent) {
@@ -295,7 +316,7 @@ public SimpleStringProperty rezultatProperty() {
 
     public void Clickequals(ActionEvent actionEvent) {
     if(operacijaunesena) {
-        if(op ==operacija.sabiranje)rezultat.set(  Double.toString(prvi+drugi)    );
+        if(op ==operacija.sabiranje)rezultat.set(  Double.toString(prvi+drugi));
         if(op==operacija.oduzimanje)rezultat.set(Double.toString(prvi-drugi));
         if(op==operacija.mnozenje)rezultat.set(Double.toString(prvi*drugi));
         if(op==operacija.dijeljenje)rezultat.set(Double.toString(prvi/drugi));
