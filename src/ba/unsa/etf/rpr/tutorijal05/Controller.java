@@ -19,9 +19,9 @@ import java.util.List;
 public class Controller {
 
 private SimpleStringProperty rezultat;
-private boolean prviunesen=false, drugiunesen=false, operacijaunesena=false;
+private boolean prviunesen=false, operacijaunesena=false;
 private boolean tacka=false;
-private double prvi=0, drugi=0;
+private double prvi=0, drugi=prvi;
 private int brojacdecimalaprvog=1;
 private int brojacdecimaladrugog=1;
 
@@ -56,7 +56,7 @@ public SimpleStringProperty rezultatProperty() {
                     rezultat.set(Double.toString(prvi));
                 }
 
-                else if(!drugiunesen) {
+                else if(operacijaunesena) {
                     if(!tacka){
                         drugi*=10;
                         drugi+=1;
@@ -114,6 +114,9 @@ public SimpleStringProperty rezultatProperty() {
     }
 
     public void Clickplus(ActionEvent actionEvent) {
+if(!prviunesen) {
+    prviunesen=true; op=operacija.sabiranje; operacijaunesena=true;
+}
 
     }
 
