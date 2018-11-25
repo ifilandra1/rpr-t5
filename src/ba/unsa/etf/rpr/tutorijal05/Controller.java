@@ -22,8 +22,8 @@ private SimpleStringProperty rezultat;
 private boolean prviunesen=false, drugiunesen=false, operacijaunesena=false;
 private boolean tacka=false;
 private double prvi=0, drugi=0;
-private int brojacdecimalaprvog=0;
-private int brojacdecimaladrugog=0;
+private int brojacdecimalaprvog=1;
+private int brojacdecimaladrugog=1;
 
 
     private enum operacija {sabiranje, oduzimanje, mnozenje, dijeljenje, postotak} ;
@@ -53,6 +53,7 @@ public SimpleStringProperty rezultatProperty() {
                         prvi+=1/Math.pow(10,brojacdecimalaprvog);
                         brojacdecimalaprvog++;
                     }
+                    rezultat.set(Double.toString(prvi));
                 }
 
                 else if(!drugiunesen) {
@@ -64,7 +65,9 @@ public SimpleStringProperty rezultatProperty() {
                         drugi+=1/Math.pow(10,brojacdecimaladrugog);
                         brojacdecimaladrugog++;
                     }
+                    rezultat.set(Double.toString(drugi));
                 }
+
     }
 
     public void Click2(ActionEvent actionEvent) {
@@ -77,6 +80,7 @@ public SimpleStringProperty rezultatProperty() {
     }
 
     public void Clickdot(ActionEvent actionEvent) {
+    tacka=true;
     }
 
     public void Clickequals(ActionEvent actionEvent) {
