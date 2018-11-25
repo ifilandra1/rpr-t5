@@ -308,9 +308,16 @@ public SimpleStringProperty rezultatProperty() {
     }
     }
     public void ClickMnozenje(ActionEvent actionEvent) {
+    if(!prviunesen) {
+        prviunesen=true; op=operacija.mnozenje; operacijaunesena=true; tacka=false;
+    }
+
     }
 
     public void ClickDijeljenje(ActionEvent actionEvent) {
+        if(!prviunesen) {
+            prviunesen=true; op=operacija.dijeljenje; operacijaunesena=true; tacka=false;
+        }
     }
 
     public void ClickPostotak(ActionEvent actionEvent) {
