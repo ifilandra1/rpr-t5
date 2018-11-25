@@ -296,9 +296,14 @@ public SimpleStringProperty rezultatProperty() {
     public void Clickequals(ActionEvent actionEvent) {
     if(operacijaunesena) {
         if(op ==operacija.sabiranje)rezultat.set(  Double.toString(prvi+drugi)    );
+        if(op==operacija.oduzimanje)rezultat.set(Double.toString(prvi-drugi));
+        if(op==operacija.mnozenje)rezultat.set(Double.toString(prvi*drugi));
+        if(op==operacija.dijeljenje)rezultat.set(Double.toString(prvi/drugi));
         prviunesen=false; tacka=false; operacijaunesena=false;
         prvi=0; drugi=prvi; brojacdecimaladrugog=1; brojacdecimalaprvog=1;
+
     }
+
     }
 
 
