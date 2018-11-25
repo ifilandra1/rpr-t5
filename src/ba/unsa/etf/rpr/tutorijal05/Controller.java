@@ -321,6 +321,9 @@ public SimpleStringProperty rezultatProperty() {
     }
 
     public void ClickPostotak(ActionEvent actionEvent) {
+        if(!prviunesen) {
+            prviunesen=true; op=operacija.postotak; operacijaunesena=true; tacka=false;
+        }
     }
 
     public void Clickplus(ActionEvent actionEvent) {
