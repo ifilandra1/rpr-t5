@@ -303,6 +303,9 @@ public SimpleStringProperty rezultatProperty() {
 
 
     public void ClickMinus(ActionEvent actionEvent) {
+    if(!prviunesen) {
+        prviunesen=true; op=operacija.oduzimanje; operacijaunesena=true; tacka=false;
+    }
     }
     public void ClickMnozenje(ActionEvent actionEvent) {
     }
