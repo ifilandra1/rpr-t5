@@ -26,9 +26,13 @@ public String getRezultat() {
     return rezultat.get();
 }
 
+public SimpleStringProperty rezultatProperty() {
+    return rezultat;
+}
+
 
     public void Clickplus(ActionEvent actionEvent) {
-
+rezultat.set("kliknuto");
     }
 
 
