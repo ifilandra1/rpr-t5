@@ -71,9 +71,57 @@ public SimpleStringProperty rezultatProperty() {
     }
 
     public void Click2(ActionEvent actionEvent) {
+
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+                prvi += 2;
+            }
+            else {
+                prvi+=2/Math.pow(10,brojacdecimalaprvog);
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+                drugi+=2;
+            }
+            else {
+                drugi+=2/Math.pow(10,brojacdecimaladrugog);
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
+
     }
 
     public void Click3(ActionEvent actionEvent) {
+        if(!prviunesen){
+            if(!tacka) {
+                prvi *= 10;
+                prvi += 3;
+            }
+            else {
+                prvi+=3/Math.pow(10,brojacdecimalaprvog);
+                brojacdecimalaprvog++;
+            }
+            rezultat.set(Double.toString(prvi));
+        }
+
+        else if(operacijaunesena) {
+            if(!tacka){
+                drugi*=10;
+                drugi+=3;
+            }
+            else {
+                drugi+=3/Math.pow(10,brojacdecimaladrugog);
+                brojacdecimaladrugog++;
+            }
+            rezultat.set(Double.toString(drugi));
+        }
     }
 
     public void Click0(ActionEvent actionEvent) {
@@ -115,7 +163,7 @@ public SimpleStringProperty rezultatProperty() {
 
     public void Clickplus(ActionEvent actionEvent) {
 if(!prviunesen) {
-    prviunesen=true; op=operacija.sabiranje; operacijaunesena=true;
+    prviunesen=true; op=operacija.sabiranje; operacijaunesena=true; tacka=false;
 }
 
     }
