@@ -19,11 +19,11 @@ import java.util.List;
 public class Controller {
 
 private SimpleStringProperty rezultat;
-private boolean unesenprvi=false, unesendrugi=false, unesenaoperacija=false;
+private boolean prviunesen=false, drugiunesen=false, operacijaunesena=false;
 private boolean tacka=false;
-private List<Integer> decimaleprvog = new ArrayList<Integer>();
-private List<Integer> decimaledrugog = new ArrayList<Integer>();
-private double prvi, drugi;
+private double prvi=0, drugi=0;
+private int brojacdecimalaprvog=0;
+private int brojacdecimaladrugog=0;
 
 
     private enum operacija {sabiranje, oduzimanje, mnozenje, dijeljenje, postotak} ;
@@ -44,6 +44,27 @@ public SimpleStringProperty rezultatProperty() {
 
     public void Click1(ActionEvent actionEvent) {
 
+                if(!prviunesen){
+                    if(!tacka) {
+                        prvi *= 10;
+                        prvi += 1;
+                    }
+                    else {
+                        prvi+=1/Math.pow(10,brojacdecimalaprvog);
+                        brojacdecimalaprvog++;
+                    }
+                }
+
+                else if(!drugiunesen) {
+                    if(!tacka){
+                        drugi*=10;
+                        drugi+=1;
+                    }
+                    else {
+                        drugi+=1/Math.pow(10,brojacdecimaladrugog);
+                        brojacdecimaladrugog++;
+                    }
+                }
     }
 
     public void Click2(ActionEvent actionEvent) {
