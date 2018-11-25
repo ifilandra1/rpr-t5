@@ -32,7 +32,7 @@ private int brojacdecimaladrugog=1;
 operacija op;
 
 public Controller() {
-    rezultat=new SimpleStringProperty("");
+    rezultat=new SimpleStringProperty("0");
 }
 
 public String getRezultat() {
@@ -55,7 +55,11 @@ public SimpleStringProperty rezultatProperty() {
                         prvi+=1/Math.pow(10,brojacdecimalaprvog);
                         brojacdecimalaprvog++;
                     }
-                    rezultat.set(Double.toString(prvi));
+                    if(!tacka)
+                    rezultat.set(Integer.toString((int)prvi));
+                    else {
+                        rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+                    }
                 }
 
                 else if(operacijaunesena) {
@@ -67,7 +71,11 @@ public SimpleStringProperty rezultatProperty() {
                         drugi+=1/Math.pow(10,brojacdecimaladrugog);
                         brojacdecimaladrugog++;
                     }
-                    rezultat.set(Double.toString(drugi));
+                    if(!tacka)
+                        rezultat.set(Integer.toString((int)drugi));
+                    else {
+                        rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+                    }
                 }
 
     }
@@ -83,7 +91,11 @@ public SimpleStringProperty rezultatProperty() {
                 prvi+=2/Math.pow(10,brojacdecimalaprvog);
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
         }
 
         else if(operacijaunesena) {
@@ -95,7 +107,11 @@ public SimpleStringProperty rezultatProperty() {
                 drugi+=2/Math.pow(10,brojacdecimaladrugog);
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
 
     }
@@ -110,7 +126,11 @@ public SimpleStringProperty rezultatProperty() {
                 prvi+=3/Math.pow(10,brojacdecimalaprvog);
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
         }
 
         else if(operacijaunesena) {
@@ -122,7 +142,11 @@ public SimpleStringProperty rezultatProperty() {
                 drugi+=3/Math.pow(10,brojacdecimaladrugog);
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
     }
 
@@ -138,8 +162,12 @@ public SimpleStringProperty rezultatProperty() {
                 prvi+=5/Math.pow(10,brojacdecimalaprvog);
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
-        }
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
+    }
 
         else if(operacijaunesena) {
             if(!tacka){
@@ -150,7 +178,11 @@ public SimpleStringProperty rezultatProperty() {
                 drugi+=5/Math.pow(10,brojacdecimaladrugog);
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
     }
 
@@ -164,7 +196,11 @@ public SimpleStringProperty rezultatProperty() {
                 prvi+=4/Math.pow(10,brojacdecimalaprvog);
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
         }
 
         else if(operacijaunesena) {
@@ -176,7 +212,11 @@ public SimpleStringProperty rezultatProperty() {
                 drugi+=4/Math.pow(10,brojacdecimaladrugog);
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
     }
 
@@ -190,7 +230,11 @@ public SimpleStringProperty rezultatProperty() {
                 prvi+=9/Math.pow(10,brojacdecimalaprvog);
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
         }
 
         else if(operacijaunesena) {
@@ -202,7 +246,11 @@ public SimpleStringProperty rezultatProperty() {
                 drugi+=9/Math.pow(10,brojacdecimaladrugog);
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
     }
 
@@ -216,7 +264,11 @@ public SimpleStringProperty rezultatProperty() {
                 prvi+=8/Math.pow(10,brojacdecimalaprvog);
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
         }
 
         else if(operacijaunesena) {
@@ -228,7 +280,11 @@ public SimpleStringProperty rezultatProperty() {
                 drugi+=8/Math.pow(10,brojacdecimaladrugog);
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
     }
 
@@ -242,7 +298,11 @@ public SimpleStringProperty rezultatProperty() {
                 prvi+=7/Math.pow(10,brojacdecimalaprvog);
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
         }
 
         else if(operacijaunesena) {
@@ -254,7 +314,11 @@ public SimpleStringProperty rezultatProperty() {
                 drugi+=7/Math.pow(10,brojacdecimaladrugog);
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
     }
 
@@ -269,7 +333,11 @@ public SimpleStringProperty rezultatProperty() {
                 prvi+=6/Math.pow(10,brojacdecimalaprvog);
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
         }
 
         else if(operacijaunesena) {
@@ -281,7 +349,11 @@ public SimpleStringProperty rezultatProperty() {
                 drugi+=6/Math.pow(10,brojacdecimaladrugog);
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
 
     }
@@ -295,7 +367,11 @@ public SimpleStringProperty rezultatProperty() {
             else {
                 brojacdecimalaprvog++;
             }
-            rezultat.set(Double.toString(prvi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)prvi));
+            else {
+                rezultat.set(Double.toString( ((int)(prvi*Math.pow(10,brojacdecimalaprvog)))  /Math.pow(10,brojacdecimalaprvog)));
+            }
         }
 
         else if(operacijaunesena) {
@@ -305,7 +381,11 @@ public SimpleStringProperty rezultatProperty() {
             else {
                 brojacdecimaladrugog++;
             }
-            rezultat.set(Double.toString(drugi));
+            if(!tacka)
+                rezultat.set(Integer.toString((int)drugi));
+            else {
+                rezultat.set(Double.toString( ((int)(drugi*Math.pow(10,brojacdecimaladrugog)))  /Math.pow(10,brojacdecimaladrugog)));
+            }
         }
 
     }
